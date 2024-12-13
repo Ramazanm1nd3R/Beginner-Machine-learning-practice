@@ -123,9 +123,16 @@ if __name__ == "__main__":
     # Обучение модели
     model = train_model()
 
-    # Тестирование модели
+    # Загрузка данных для проверки
     transform = transforms.Compose([transforms.ToTensor()])
+    train_dataset = datasets.MNIST(root="dataset/", train=True, transform=transform, download=True)
+    train_loader = DataLoader(dataset=train_dataset, batch_size=64, shuffle=True)
+
     test_dataset = datasets.MNIST(root="dataset/", train=False, transform=transform, download=True)
     test_loader = DataLoader(dataset=test_dataset, batch_size=64, shuffle=False)
 
+    # Проверка точности
+    print("Точность на тренировочных данных:")
+    check_accuracy(train_loader, model)
+    print("Точность на тестовых данных:")
     check_accuracy(test_loader, model)
