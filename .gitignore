@@ -1,0 +1,33 @@
+# Ignore Python bytecode and cache files
+__pycache__/
+__pycache__
+*.py[cod]
+*.pyo
+
+# Ignore virtual environment folder
+venv/
+ignoreFolder/
+
+# Ignore dataset folder if it contains downloaded or temporary data
+dataset/
+
+# Ignore model files if you don't want them in the repository
+*.pth
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system-specific or editor-specific files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore logs or temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore compiled Python files
+*.pyc
