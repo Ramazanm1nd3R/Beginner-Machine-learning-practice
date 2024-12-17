@@ -1,4 +1,4 @@
-torch
+torch # needs python 3.8v
 torchvision
 Pillow
 tqdm
