@@ -1,0 +1,4 @@
+natasha
+wikipedia-api
+razdel
+nltk
