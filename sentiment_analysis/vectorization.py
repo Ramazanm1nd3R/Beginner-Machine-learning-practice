@@ -2,6 +2,8 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 import pandas as pd
+import joblib
+import os
 
 def vectorize_text(train_df, test_df):
     # Используем очищенный текст
@@ -16,4 +18,10 @@ def vectorize_text(train_df, test_df):
     y_train = train_df['label']
     y_test = test_df['label']
 
-    return X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test, vectorizer
+
+def save_vectorizer(vectorizer):
+    joblib.dump(vectorizer, os.path.join('models', 'tfidf_vectorizer.pkl'))
+
+def load_vectorizer():
+    return joblib.load(os.path.join('models', 'tfidf_vectorizer.pkl'))
