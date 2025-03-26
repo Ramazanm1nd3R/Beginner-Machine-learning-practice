@@ -5,6 +5,7 @@ __pycache__
 *.pyo
 
 # Ignore virtual environment folder
+.venv/
 venv/
 ignoreFolder/
 

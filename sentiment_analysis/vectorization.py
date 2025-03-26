@@ -1,11 +1,15 @@
 # vectorization.py
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split
+from preprocessing import clean_text, lemmatize_text
 import pandas as pd
 import joblib
 import os
 
 def vectorize_text(train_df, test_df):
+    # Очистка и лемматизация
+    train_df['clean_text'] = train_df['text'].apply(lambda x: lemmatize_text(clean_text(str(x))))
+    test_df['clean_text'] = test_df['text'].apply(lambda x: lemmatize_text(clean_text(str(x))))
+
     # Используем очищенный текст
     vectorizer = TfidfVectorizer(max_features=5000, ngram_range=(1, 2))
     
