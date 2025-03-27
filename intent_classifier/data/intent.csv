@@ -1,0 +1,201 @@
+text,intent
+Где сейчас мой заказ?,track_order
+Хочу отследить посылку,track_order
+Подскажите когда приедет моя покупка?,track_order
+Уже отправили товар?,track_order
+Как узнать где мой заказ?,track_order
+Мой заказ где?,track_order
+Когда ждать доставку?,track_order
+Долго еще ехать будет?,track_order
+Где моя посылка?,track_order
+Я не вижу информацию о доставке,track_order
+Можно трек-номер?,track_order
+Помогите найти мой заказ,track_order
+Хочу знать статус доставки,track_order
+Отслеживание не работает,track_order
+Никак не могу узнать где посылка,track_order
+Вы отправили мой заказ?,track_order
+Уже в пути?,track_order
+Когда будет у курьера?,track_order
+Где можно посмотреть трек?,track_order
+Сколько еще ждать?,track_order
+Посылка потерялась?,track_order
+Сколько дней до доставки?,track_order
+Когда курьер позвонит?,track_order
+Можете дать ссылку на трек?,track_order
+Почему нет обновлений по заказу?,track_order
+Где мой товар???,track_order
+У меня нет информации по отправке,track_order
+Заказ ушел со склада?,track_order
+На каком этапе мой заказ?,track_order
+Проверить статус пожалуйста,track_order
+Отменить заказ пожалуйста,cancel_order
+Я передумал как отменить?,cancel_order
+Не хочу больше этот товар,cancel_order
+Можете аннулировать мой заказ?,cancel_order
+Как отказаться от заказа?,cancel_order
+Хочу отменить что делать?,cancel_order
+Сделал ошибку прошу отменить,cancel_order
+Товар не нужен отмените заказ,cancel_order
+Хочу другой этот отмените,cancel_order
+Нажал случайно отмените,cancel_order
+Нужно отменить как можно скорее,cancel_order
+Еще не отправили? Тогда отмените,cancel_order
+Можете удалить мой заказ?,cancel_order
+Передумал отмена нужна,cancel_order
+Можно отмену оформить?,cancel_order
+Как отменить оформленный заказ?,cancel_order
+Поменялись планы отмените,cancel_order
+Отправка еще не началась? Отмените!,cancel_order
+Срочно отмените пожалуйста,cancel_order
+Не успеваю получить отмените,cancel_order
+Заказ больше не актуален,cancel_order
+Не хочу ждать отмените,cancel_order
+Хочу поменять заказ отмените этот,cancel_order
+Отказ от заказа,cancel_order
+Как отменить до оплаты?,cancel_order
+Заказали не то хотим отменить,cancel_order
+Можно аннулировать заявку?,cancel_order
+Невозможно получить — отмена,cancel_order
+Прошу отменить текущий заказ,cancel_order
+Этот заказ ошибочный отмените,cancel_order
+Хочу вернуть товар,return_request
+Как оформить возврат?,return_request
+Товар не подошел хочу сдать обратно,return_request
+Плохо упаковано вернуть можно?,return_request
+Могу ли я вернуть заказ?,return_request
+Как вернуть покупку?,return_request
+Не устраивает качество возврат,return_request
+Хочу вернуть и получить деньги,return_request
+Что нужно для возврата?,return_request
+Можете оформить возврат?,return_request
+Когда можно сдать товар?,return_request
+Как вернуть если заказ уже пришел?,return_request
+Возврат товара в течение 14 дней?,return_request
+Хочу отправить товар обратно,return_request
+Товар пришел поврежденным верну,return_request
+Как сдать обратно?,return_request
+Не понравилось прошу оформить возврат,return_request
+Куда отправлять для возврата?,return_request
+Можно вернуть в магазин?,return_request
+Прошу вернуть деньги за товар,return_request
+Это не то что я заказывал — возврат,return_request
+Как запустить процедуру возврата?,return_request
+Вернуть и обменять можно?,return_request
+Проблемы с товаром хочу вернуть,return_request
+Какие условия возврата?,return_request
+Верну и больше не закажу!,return_request
+Оформите возврат не подошло,return_request
+Гарантия есть? Хочу вернуть,return_request
+Сделали ошибку нужен возврат,return_request
+Не могу войти в аккаунт,account_help
+Забыл пароль помогите,account_help
+Как сменить почту в профиле?,account_help
+Проблемы со входом в систему,account_help
+Сайт не пускает в аккаунт,account_help
+Нужна помощь с аккаунтом,account_help
+Как восстановить доступ?,account_help
+Сброс пароля не работает,account_help
+Забыл логин и пароль,account_help
+Почта недействительна что делать?,account_help
+Не могу авторизоваться,account_help
+Прошу помощи с входом,account_help
+Учетная запись заблокирована?,account_help
+Как сменить email?,account_help
+Не приходит код на почту,account_help
+Пароль не принимается,account_help
+Можно сменить пароль?,account_help
+Ошибка при входе в профиль,account_help
+Нужна поддержка по аккаунту,account_help
+Моя почта больше неактуальна,account_help
+Как изменить контактные данные?,account_help
+Нет доступа к аккаунту,account_help
+Аккаунт не подтвержден,account_help
+Как отвязать старую почту?,account_help
+Проблемы с двухфакторной авторизацией,account_help
+Как удалить аккаунт?,account_help
+Почта устарела не могу зайти,account_help
+Сменилась почта как обновить?,account_help
+Как поменять адрес доставки?,change_address
+Хочу изменить место доставки,change_address
+Нужно скорректировать адрес,change_address
+Указал не тот адрес можно поменять?,change_address
+Могу ли я поменять адрес?,change_address
+Заказ уже сделан но адрес другой нужен,change_address
+Как внести новый адрес?,change_address
+Прошу изменить адрес доставки,change_address
+Неправильно указал улицу,change_address
+Можно обновить адрес?,change_address
+Куда писать по поводу смены адреса?,change_address
+Доставка по другому адресу нужна,change_address
+Как сменить адрес до отправки?,change_address
+Перепутал дом исправьте,change_address
+Новый адрес: ... — внесите пожалуйста,change_address
+Хочу перенаправить заказ,change_address
+Можно доставку в другое место?,change_address
+Изменение адреса возможно?,change_address
+Поменяйте адрес в заказе,change_address
+Доставка должна быть в другой город,change_address
+Не тот адрес ввел при заказе,change_address
+Как редактировать адрес?,change_address
+Нужно добавить номер квартиры,change_address
+Срочно исправьте адрес!,change_address
+Сменился адрес проживания,change_address
+Как сохранить другой адрес?,change_address
+Проблема с оплатой,payment_issue
+Оплата не проходит,payment_issue
+Ошибка при оплате,payment_issue
+Не списались деньги,payment_issue
+Деньги ушли но заказ не оформлен,payment_issue
+Сбой при оплате картой,payment_issue
+Почему не проходит оплата?,payment_issue
+Не могу оплатить заказ,payment_issue
+Что делать если не работает оплата?,payment_issue
+Платеж не подтверждается,payment_issue
+Система оплаты не отвечает,payment_issue
+Оплата зависла,payment_issue
+Указал данные но не списались,payment_issue
+Проблемы с картой при оплате,payment_issue
+Почему отказано в оплате?,payment_issue
+Платеж отклонен почему?,payment_issue
+Подскажите как оплатить иначе?,payment_issue
+Можно ли перевести вручную?,payment_issue
+Как оплатить через Kaspi?,payment_issue
+Оплата через телефон не работает,payment_issue
+Оплата прошла но товара нет,payment_issue
+Проблемы с банковской картой,payment_issue
+Оплатил но ничего не пришло,payment_issue
+Требует повторной оплаты,payment_issue
+Что с моим платежом?,payment_issue
+Карта не принимается системой,payment_issue
+Оплата наличными возможна?,payment_issue
+Как оплатить повторно?,payment_issue
+Расскажите про акции,marketing_question
+Есть ли сейчас скидки?,marketing_question
+Какие бонусы можно получить?,marketing_question
+Какая у вас программа лояльности?,marketing_question
+Есть ли промокоды?,marketing_question
+Где найти актуальные акции?,marketing_question
+Как участвовать в распродажах?,marketing_question
+Какие условия скидок?,marketing_question
+Когда следующая акция?,marketing_question
+Сделайте мне скидку пожалуйста :),marketing_question
+Где взять купон?,marketing_question
+У меня бонусы как использовать?,marketing_question
+Акции только на сайте?,marketing_question
+Есть сезонные скидки?,marketing_question
+Подскажите про бонусную программу,marketing_question
+Можно получить скидку за подписку?,marketing_question
+Как использовать промокод?,marketing_question
+Какие товары участвуют в акции?,marketing_question
+Что нужно для получения бонусов?,marketing_question
+Есть ли скидки для постоянных клиентов?,marketing_question
+Хочу участвовать в распродажах,marketing_question
+Сколько бонусов у меня?,marketing_question
+Как проверить скидки?,marketing_question
+Подарки за покупки есть?,marketing_question
+Какие у вас маркетинговые предложения?,marketing_question
+Где найти информацию о скидках?,marketing_question
+Какая максимальная скидка?,marketing_question
+Бонусы сгорят?,marketing_question
+Как не пропустить акцию?,marketing_question
