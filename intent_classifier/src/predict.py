@@ -1,14 +1,11 @@
 # src/predict.py
 import joblib
-import os
+from sentence_transformers import SentenceTransformer
 
-MODEL_PATH = os.path.join('models', 'intent_model.pkl')
-VECTORIZER_PATH = os.path.join('models', 'tfidf_vectorizer.pkl')
-
-model = joblib.load(MODEL_PATH)
-vectorizer = joblib.load(VECTORIZER_PATH)
+model = joblib.load("modelsWithBert/intent_model.pkl")
+bert = SentenceTransformer("all-MiniLM-L6-v2")
 
 def predict_intent(text: str) -> str:
-    vec = vectorizer.transform([text])
+    vec = bert.encode([text])
     prediction = model.predict(vec)[0]
     return prediction

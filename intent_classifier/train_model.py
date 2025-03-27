@@ -1,9 +1,11 @@
 # train_model.py
 import pandas as pd
+from sentence_transformers import SentenceTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
+from vectorization import vectirizer_with_bert
 import joblib
 import os
 
@@ -17,9 +19,13 @@ labels = df['intent']
 X_train, X_test, y_train, y_test = train_test_split(texts, labels, test_size=0.2, random_state=42)
 
 # Векторизация текста
-vectorizer = TfidfVectorizer()
-X_train_vec = vectorizer.fit_transform(X_train)
-X_test_vec = vectorizer.transform(X_test)
+# vectorizer = TfidfVectorizer()
+# X_train_vec = vectorizer.fit_transform(X_train)
+# X_test_vec = vectorizer.transform(X_test)
+
+# векторизация с BERT
+X_train_vec = vectirizer_with_bert(X_train.tolist())
+X_test_vec = vectirizer_with_bert(X_test.tolist())
 
 # Обучение модели
 model = LogisticRegression(max_iter=1000)
@@ -31,6 +37,5 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 # Сохранение модели и векторайзера
-os.makedirs("models", exist_ok=True)
-joblib.dump(model, "models/intent_model.pkl")
-joblib.dump(vectorizer, "models/tfidf_vectorizer.pkl")
+os.makedirs("modelsWithBert", exist_ok=True)
+joblib.dump(model, "modelsWithBert/intent_model.pkl")
