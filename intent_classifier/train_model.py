@@ -1,8 +1,6 @@
 # train_model.py
 import pandas as pd
-from sentence_transformers import SentenceTransformer
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 from vectorization import vectirizer_with_bert
@@ -24,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(texts, labels, test_size=0.2
 X_train = X_train.apply(clean_text).apply(lemmatize_text)
 X_test = X_test.apply(clean_text).apply(lemmatize_text)
 
-# Векторизация текста
+# Векторизация текстаtfidf_vectorizer.pkl
 # vectorizer = TfidfVectorizer()
 # X_train_vec = vectorizer.fit_transform(X_train)
 # X_test_vec = vectorizer.transform(X_test)
