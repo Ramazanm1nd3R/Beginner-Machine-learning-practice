@@ -1,4 +1,3 @@
-import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
 import torch
@@ -6,7 +5,7 @@ import os
 import joblib
 
 from scripts.prepare_data import DataPreparer
-from src.preprocessing_pipeline import TextProcessor
+from src.preprocessing_pipeline import EnglishTextProcessor
 from scripts.model_selection import ModelSelector  
 
 # 1. Определение устройства
@@ -18,7 +17,7 @@ preparer = DataPreparer()
 train_df, test_df = preparer.load_and_prepare()
 
 # 3. Обработка текста
-processor = TextProcessor()
+processor = EnglishTextProcessor()
 train_df["text"] = train_df["text"].apply(processor.preprocess)
 test_df["text"] = test_df["text"].apply(processor.preprocess)
 
@@ -46,4 +45,4 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred))
 
 # 8. Сохранение модели
 os.makedirs("models", exist_ok=True)
-joblib.dump(model, 'models/intent_modelN2_with_clean_labels.pkl')
+joblib.dump(model, 'models/intent_modelN3_with_spacy_lemma.pkl')
