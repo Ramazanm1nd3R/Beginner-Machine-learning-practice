@@ -16,8 +16,7 @@ project_root/
 │   ├── train.py                # обучение модели
 │   ├── predict.py              # запуск модели и получение ответа
 │   ├── preprocessing.py        # очистка + лемматизация
-│   ├── vectorization.py        # TF-IDF или BERT векторизация
-│   └── evaluation.py           # метрики (accuracy, f1 и пр)
+│   └── vectorization.py        # TF-IDF или BERT векторизация
 │
 ├── tests/                      # юнит-тесты и тестовые сессии (можно сохранять логи/скрины)
 │   └── screenshots/
