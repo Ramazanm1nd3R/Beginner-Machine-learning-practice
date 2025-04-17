@@ -3,7 +3,7 @@ from translator import load_model_and_tokenizer, translate_batch
 from docx import Document
 from tqdm import tqdm
 
-paragraphs = extract_paragraphs("docs/originals/CIJI.docx")
+paragraphs = extract_paragraphs("docs/originals/CIJI_short_example.docx")
 model, tokenizer = load_model_and_tokenizer()
 translated_doc = Document()
 
@@ -27,5 +27,5 @@ if batch:
     for t in translated_batch:
         translated_doc.add_paragraph(t)
 
-translated_doc.save("docs/translate/Translate_CIJI.docx")
+translated_doc.save("docs/translate/Translate_CIJI_short_example.docx")
 print("✅ Перевод завершён и сохранён в translated_book.docx")
